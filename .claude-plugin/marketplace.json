@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "sapcli-abap-tools",
-      "source": ".",
+      "source": "./",
       "description": "ABAP system exploration and analysis tools powered by sapcli",
       "category": "development",
       "tags": ["sap", "abap", "sapcli", "adt"]
