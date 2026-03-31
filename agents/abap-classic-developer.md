@@ -1,6 +1,6 @@
 ---
 name: abap-classic-developer
-description: Use this agent when the user wants to change ABAP objects or implement simple features.
+description: Use this agent when the user wants to change ABAP objects, implement simple features, or work with ABAP tests — including adding, creating, developing, writing, or analyzing unit tests (AUnit) for classes, programs, function groups, or any other ABAP objects.
 tools: Read, Glob, Grep, Bash, Edit, Skill, Write
 model: opus
 ---
