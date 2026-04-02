@@ -10,6 +10,8 @@ Built on top of [sapcli](https://github.com/jfilak/sapcli) -- the command line i
 
 - **abap-explorer** -- An ABAP architect agent that analyzes SAP system implementations by reading ABAP code, navigating package hierarchies, querying database tables, and finding object usages. Automatically invoked when you ask Claude about ABAP code, classes, packages, or SAP system objects.
 
+- **abap-classic-developer** -- A classic ABAP developer agent that works with the classic ABAP objects — programs, includes, classes, interfaces, function groups, and dictionary objects (tables, structures, data elements) — including implementing features, modifying code, writing and analyzing unit tests (AUnit), and running static checks (ATC). Automatically invoked when you ask Claude to implement, modify, or test classic ABAP objects.
+
 ### Skills
 
 - **abap-system-info** -- Fetches and displays ABAP system information such as system ID, client, and user details. Useful for troubleshooting and confirming connection details.
@@ -143,10 +145,14 @@ Once the plugin is loaded, you can interact with your SAP system naturally throu
 
 > Query the MARA table for material 12345
 
+> Create a new ABAP function module enabling System Logon for a given ICF path
+
+> Cover the class ZCL_UNDER_TESTED with unit tests
+
 > /abap-system-info
 ```
 
-The **abap-explorer** agent is triggered automatically when your questions relate to ABAP code or SAP system objects. It uses `sapcli` commands under the hood to read source code, navigate packages, run SQL queries, and trace object usage.
+The **abap-explorer** agent is triggered automatically when your questions relate to ABAP code or SAP system objects. It uses `sapcli` commands under the hood to read source code, navigate packages, run SQL queries, and trace object usage. The **abap-classic-developer** agent is triggered automatically when you ask to implement, modify, or test classic ABAP objects.
 
 ## Supported sapcli Operations
 
